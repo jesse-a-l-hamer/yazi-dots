@@ -1,0 +1,59 @@
+[mgr]
+  linemode    = "mtime"
+  show_hidden = true
+  ratio       = [1, 3, 4]
+
+[open]
+  prepend_rules = [{ mime = "image/*", use = ["open", "set-wallpaper"] }]
+  append_rules  = [{ mime = "text/*", use = ["sudoedit"] }]
+
+[opener]
+  set-wallpaper = [
+    { run = 'hyprctl hyprpaper reload ,"$0"', for = "linux", desc = "Set as wallpaper" },
+  ]
+  extract = [{ run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" }]
+  sudoedit = [{ run = 'sudoedit "$@"', desc = "sudoedit", block = true }]
+
+[plugin]
+  prepend_fetchers = [
+    { id = "git", name = "*", run = "git" },
+    { id = "git", name = "*/", run = "git" },
+  ]
+  prepend_previewers = [
+    { mime = "application/*zip", run = "ouch" },
+    { mime = "application/x-tar", run = "ouch" },
+    { mime = "application/x-bzip2", run = "ouch" },
+    { mime = "application/x-7z-compressed", run = "ouch" },
+    { mime = "application/x-rar", run = "ouch" },
+    { mime = "application/vnd.rar", run = "ouch" },
+    { mime = "application/x-xz", run = "ouch" },
+    { mime = "application/xz", run = "ouch" },
+    { mime = "application/x-zstd", run = "ouch" },
+    { mime = "application/zstd", run = "ouch" },
+    { mime = "application/java-archive", run = "ouch" },
+    { name = "*{.tar,.tar.*}", run = "ouch" },
+    { mime = "application/subrip", run = "mediainfo" },
+    { mime = "application/postscript", run = "mediainfo" },
+    { name = "/run/user/1000/gvfs/**/*", run = "noop" },
+    { name = "/run/media/jalhamer/**/*", run = "noop" },
+    { name = "*.{djvu,djv}", run = "djvu-view" },
+    { name = "*.{csv,tsv,json}", run = "rich-preview" },
+    { name = "*.{md,ipynb}", run = "rich-preview" },
+    { name = "*.{py,rs,go,lua,cpp,h}", run = "rich-preview" },
+    { mime = "{audio,video,image}/*", run = "mediainfo" },
+    { mime = "application/octet-stream", run = 'piper -- hexyl --border=none --terminal-width=$w "$1"' },
+  ]
+  prepend_preloaders = [
+    { mime = "application/subrip", run = "mediainfo" },
+    { mime = "application/postscript", run = "mediainfo" },
+    { name = "/run/user/1000/gvfs/**/*", run = "noop" },
+    { name = "/run/media/jalhamer/**/*", run = "noop" },
+    { mime = "{audio,video,image}/*", run = "mediainfo" },
+  ]
+  append_previewers = [
+    { mime = "*/*binary*", run = 'piper -- hexyl --border=none --terminal-width=$w "$1"' },
+    { name = "*/", run = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"' },
+  ]
+
+[tasks]
+  image_alloc = 1073741824 # = 1024*1024*1024 = 1024MB
