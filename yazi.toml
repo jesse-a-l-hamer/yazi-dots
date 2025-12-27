@@ -3,6 +3,9 @@
   show_hidden = true
   ratio       = [1, 3, 4]
 
+[preview]
+  wrap = "yes"
+
 [open]
   prepend_rules = [{ mime = "image/*", use = ["open", "set-wallpaper"] }]
   append_rules  = [{ mime = "text/*", use = ["sudoedit"] }]
@@ -37,9 +40,6 @@
     { name = "/run/user/1000/gvfs/**/*", run = "noop" },
     { name = "/run/media/jalhamer/**/*", run = "noop" },
     { name = "*.{djvu,djv}", run = "djvu-view" },
-    { name = "*.{csv,tsv,json}", run = "rich-preview" },
-    { name = "*.{md,ipynb}", run = "rich-preview" },
-    { name = "*.{py,rs,go,lua,cpp,h}", run = "rich-preview" },
     { mime = "{audio,video,image}/*", run = "mediainfo" },
     { mime = "application/octet-stream", run = 'piper -- hexyl --border=none --terminal-width=$w "$1"' },
   ]
