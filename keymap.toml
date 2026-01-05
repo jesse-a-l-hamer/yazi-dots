@@ -22,7 +22,7 @@
     ], run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
     { on = "<C-m>", run = '''shell --
 	paths=$(for p in "$@"; do echo "$p"; done | paste -s -d,)
-	thunderbird -compose "attachment='$paths'"
+	betterbird -compose "attachment='$paths'"
 ''' },
     { on = [
       "c",
