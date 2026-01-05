@@ -55,8 +55,8 @@ hash = "ab2e66065a94cca4886b303518e44bd8"
 
 [[plugin.deps]]
 use = "uhs-robert/recycle-bin"
-rev = "53ad17c"
-hash = "80221fe740a6f251d35845d29391bea7"
+rev = "69d7d4c"
+hash = "38dac2fc8f4b50bbdaa46e699720a54a"
 
 [[plugin.deps]]
 use = "boydaihungst/restore"
@@ -95,10 +95,10 @@ hash = "9628b660afb192d32f2ea5f6634d3e72"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "9276ffa"
+rev = "4a1802a"
 hash = "b069dba45e199684b16fa12d385642ed"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-latte"
-rev = "9276ffa"
+rev = "4a1802a"
 hash = "525675a9180ed23a097b07399627294a"
