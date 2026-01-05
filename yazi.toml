@@ -40,22 +40,22 @@
     { name = "*{.tar,.tar.*}", run = "ouch" },
     { mime = "application/subrip", run = "mediainfo" },
     { mime = "application/postscript", run = "mediainfo" },
-    { name = "/run/user/1000/gvfs/**/*", run = "noop" },
-    { name = "/run/media/jalhamer/**/*", run = "noop" },
-    { name = "*.{djvu,djv}", run = "djvu-view" },
+    { url = "/run/user/1000/gvfs/**/*", run = "noop" },
+    { url = "/run/media/jalhamer/**/*", run = "noop" },
+    { url = "*.{djvu,djv}", run = "djvu-view" },
     { mime = "{audio,video,image}/*", run = "mediainfo" },
     { mime = "application/octet-stream", run = 'piper -- hexyl --border=none --terminal-width=$w "$1"' },
   ]
   prepend_preloaders = [
     { mime = "application/subrip", run = "mediainfo" },
     { mime = "application/postscript", run = "mediainfo" },
-    { name = "/run/user/1000/gvfs/**/*", run = "noop" },
-    { name = "/run/media/jalhamer/**/*", run = "noop" },
+    { url = "/run/user/1000/gvfs/**/*", run = "noop" },
+    { url = "/run/media/jalhamer/**/*", run = "noop" },
     { mime = "{audio,video,image}/*", run = "mediainfo" },
   ]
   append_previewers = [
     { mime = "*/*binary*", run = 'piper -- hexyl --border=none --terminal-width=$w "$1"' },
-    { name = "*/", run = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"' },
+    { url = "*/", run = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"' },
   ]
 
 [tasks]
