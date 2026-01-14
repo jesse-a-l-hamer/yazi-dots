@@ -89,9 +89,6 @@ rev = "57f1863"
 hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
 
 [[plugin.deps]]
-use = "TD-Sky/sudo"
-rev = "86205aa"
-hash = "9628b660afb192d32f2ea5f6634d3e72"
 
 [[plugin.deps]]
 use = "grappas/wl-clipboard"
