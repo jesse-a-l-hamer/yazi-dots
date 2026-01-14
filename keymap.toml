@@ -1,17 +1,39 @@
 [mgr]
   prepend_keymap = [
-    { on = "!", for = "unix", run = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
-    { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
-    { on = "p", run = "plugin smart-paste", desc = "Paste into the hovered directory or CWD" },
-    # https://github.com/sxyazi/yazi/discussions/327
+    #############
+    ### SHELL ###
+    #############
+    # blocking shell
+    { on = "!", run = 'shell "$SHELL" --block', desc = "Open $SHELL here", for = "unix" },
+    # dragon-drop
     { on = "<C-n>", run = 'shell -- dragon-drop -x -i -T "$@"' },
+    # yank
     { on = "y", run = [
       'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list',
       "yank",
     ] },
+    # sudoedit
+    { on = [
+      "R",
+      "e",
+    ], run = '''shell 'sudoedit "$@"' --block --confirm''', desc = "sudoedit" },
+    # compose mail with attachment
+    { on = "<C-m>", run = '''shell --
+	paths=$(for p in "$@"; do echo "$p"; done | paste -s -d,)
+	betterbird -compose "attachment='$paths'"
+''' },
+    ###############
+    ### PLUGINS ###
+    ###############
+    # smart-enter
+    { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+    # smart-paste
+    { on = "p", run = "plugin smart-paste", desc = "Paste into the hovered directory or CWD" },
+    # jump-to-char
     { on = [
       "f",
     ], run = "plugin jump-to-char", desc = "Jump to char" },
+    # toggle-pane
     { on = [
       "T",
       "m",
@@ -20,28 +42,30 @@
       "T",
       "M",
     ], run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
-    { on = "<C-m>", run = '''shell --
-	paths=$(for p in "$@"; do echo "$p"; done | paste -s -d,)
-	betterbird -compose "attachment='$paths'"
-''' },
+    # chmod
     { on = [
       "c",
       "m",
     ], run = "plugin chmod", desc = "Chmod on selected files" },
+    # diff
     { on = [
       "g",
       "D",
     ], run = "plugin diff", desc = "Diff the selected with the hovered file" },
+    # lazygit
     { on = [
       "g",
       "i",
     ], run = "plugin lazygit", desc = "run lazygit" },
+    # recycle-bin
     { on = [
       "R",
       "b",
     ], run = "plugin recycle-bin", desc = "Open Recycle Bin menu" },
+    # restore
     { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
     { on = "U", run = "plugin restore -- --interactive", desc = "Restore deleted files/folders (Interactive)" },
+    # gvfs
     { on = [
       "M",
       "m",
@@ -78,12 +102,15 @@
       "`",
       "`",
     ], run = "plugin gvfs -- jump-back-prev-cwd", desc = "Jump back to the position before jumped to device" },
+    # kdeconnect-send
     { on = [
       "<C-s>",
     ], run = "plugin kdeconnect-send", desc = "Send selected files via KDE Connect" },
+    # ouch
     { on = [
       "C",
     ], run = "plugin ouch", desc = "Compress with ouch" },
+    # sudo
     { on = [
       "R",
       "p",
@@ -128,10 +155,6 @@
       "R",
       "m",
     ], run = "plugin sudo -- chmod", desc = "sudo chmod" },
-    { on = [
-      "R",
-      "e",
-    ], run = '''shell 'sudoedit "$@"' --block --confirm''', desc = "sudoedit" },
   ]
 
 [input]
