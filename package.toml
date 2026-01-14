@@ -93,6 +93,16 @@ use = "TD-Sky/sudo"
 rev = "86205aa"
 hash = "9628b660afb192d32f2ea5f6634d3e72"
 
+[[plugin.deps]]
+use = "grappas/wl-clipboard"
+rev = "e9a38e4"
+hash = "6b8e5d6b09626facec713923d3ddb54b"
+
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "71545f4"
+hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
 rev = "4a1802a"
