@@ -113,6 +113,11 @@ use = "pirafrank/what-size"
 rev = "179ebf6"
 hash = "57056b9728006881d580ccabe8154a9c"
 
+[[plugin.deps]]
+use = "Shallow-Seek/modif"
+rev = "2b3a09e"
+hash = "c32a76c9caa9cfc6cc10c83bcbebf4d0"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
 rev = "4a1802a"

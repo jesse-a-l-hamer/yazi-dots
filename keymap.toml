@@ -165,6 +165,11 @@
       ".",
       "s",
     ], run = "plugin what-size", desc = "Calculate size of selection or cwd" },
+    # modif
+    { on = [
+      "b",
+      "m",
+    ], run = "plugin modif 1w", desc = "Show files modified in the last week" },
   ]
 
 [pick]
