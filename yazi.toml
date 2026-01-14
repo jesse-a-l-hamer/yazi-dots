@@ -11,14 +11,15 @@
 
 [opener]
   edit = [
-    { "run" = "$EDITOR %s", block = true, for = "unix", desc = "Edit" },
-    { "run" = "sudoedit %s", block = true, for = "unix", desc = "Edit (as root)" },
+    { run = "${EDITOR:-vi} %s", block = true, for = "unix", desc = "Edit" },
+    { run = "sudoedit %s", block = true, for = "unix", desc = "Edit (as root)" },
+    { run = "code %s", desc = "code", for = "windows", orphan = true },
+    { run = "code -w %s", desc = "code (block)", for = "windows", block = true },
   ]
   set-wallpaper = [
     { run = 'hyprctl hyprpaper reload ,"%s"', for = "linux", desc = "Set as wallpaper" },
   ]
   extract = [{ run = 'ouch d -y "%s"', desc = "Extract here with ouch", for = "unix" }]
-  sudoedit = [{ run = 'sudoedit "%s"', desc = "sudoedit", block = true }]
 
 [plugin]
   prepend_fetchers = [
