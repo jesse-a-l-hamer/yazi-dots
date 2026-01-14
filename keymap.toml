@@ -159,6 +159,9 @@
     { on = "<C-y>", run = "plugin wl-clipboard", desc = "yank to system clipboard" },
     # copy-file-contents
     { on = "<A-y>", run = "plugin copy-file-contents", desk = "copy contents of file" },
+    # open-with-cmd
+    { on = "<C-o>", run = "plugin open-with-cmd -- block", desc = "Open with command in the terminal" },
+    { on = "<A-o>", run = "plugin open-with-cmd", desc = "Open with command" },
   ]
 
 [input]
