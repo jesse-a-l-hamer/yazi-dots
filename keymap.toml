@@ -100,6 +100,11 @@
       "`",
       "`",
     ], run = "plugin gvfs -- jump-back-prev-cwd", desc = "Jump back to the position before jumped to device" },
+    # sshfs
+    { on = [
+      "M",
+      "s",
+    ], run = "plugin sshfs -- menu", desc = "Open SSHFS options" },
     # kdeconnect-send
     { on = [
       "<C-s>",

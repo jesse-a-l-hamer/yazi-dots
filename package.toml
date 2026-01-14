@@ -89,6 +89,9 @@ rev = "57f1863"
 hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
 
 [[plugin.deps]]
+use = "uhs-robert/sshfs"
+rev = "5edff3b"
+hash = "e92138f6eb884bef96d92b2d114ac927"
 
 [[plugin.deps]]
 use = "grappas/wl-clipboard"
