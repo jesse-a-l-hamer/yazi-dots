@@ -11,6 +11,10 @@ require("gvfs"):setup({
 require("kdeconnect-send"):setup({
 	auto_select_single = false,
 })
+require("copy-file-contents"):setup({
+	append_char = "\n",
+	notification = true,
+})
 
 Status:children_add(function(self)
 	local h = self._current.hovered
