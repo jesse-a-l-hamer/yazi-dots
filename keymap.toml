@@ -116,10 +116,7 @@
     { on = "<C-o>", run = "plugin open-with-cmd -- block", desc = "Open with command in the terminal" },
     { on = "<A-o>", run = "plugin open-with-cmd", desc = "Open with command" },
     # what-size
-    { on = [
-      ".",
-      "s",
-    ], run = "plugin what-size", desc = "Calculate size of selection or cwd" },
+    { on = "W", run = "plugin what-size", desc = "Calculate size of selection or cwd" },
     # modif
     { on = [
       "b",
