@@ -108,6 +108,11 @@ use = "Ape/open-with-cmd"
 rev = "e3d430f"
 hash = "d29c1ffa99099181faf8c01d1f59aa4c"
 
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "179ebf6"
+hash = "57056b9728006881d580ccabe8154a9c"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
 rev = "4a1802a"
