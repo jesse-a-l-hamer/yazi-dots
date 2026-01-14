@@ -155,6 +155,8 @@
       "R",
       "m",
     ], run = "plugin sudo -- chmod", desc = "sudo chmod" },
+    # wl-clipboard
+    { on = "<C-y>", run = "plugin wl-clipboard", desc = "yank to system clipboard" },
   ]
 
 [input]
