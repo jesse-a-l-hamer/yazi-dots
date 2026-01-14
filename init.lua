@@ -7,6 +7,7 @@ require("restore"):setup()
 require("gvfs"):setup({
 	which_keys = "1234567890qwertyuiopasdfghjklzxcvbnm-=[]\\;',./!@#$%^&*()_+{}|:\"<>?",
 	save_path = os.getenv("HOME") .. "/.config/yazi/gvfs.private",
+	password_vault = "keyring",
 })
 require("kdeconnect-send"):setup({
 	auto_select_single = false,
