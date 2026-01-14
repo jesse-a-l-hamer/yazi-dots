@@ -164,3 +164,16 @@
     { on = "<A-o>", run = "plugin open-with-cmd", desc = "Open with command" },
   ]
 
+[pick]
+  prepend_keymap = [
+    { on = "<C-y>", run = "close --submit", desc = "Submit the pick" },
+    { on = "<C-e>", run = "close", desc = "Cancel pick" },
+    { on = "<C-p>", run = "arrow prev", desc = "Previous option" },
+    { on = "<C-n>", run = "arrow next", desc = "Next option" },
+  ]
+
+[cmp]
+  prepend_keymap = [
+    { on = "<C-y>", run = "close --submit", desc = "Submit the completion" },
+    { on = "<C-e>", run = "close", desc = "Cancel completion" },
+  ]
