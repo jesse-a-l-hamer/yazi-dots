@@ -164,5 +164,3 @@
     { on = "<A-o>", run = "plugin open-with-cmd", desc = "Open with command" },
   ]
 
-[input]
-  prepend_keymap = [{ on = "<Esc>", run = "close", desc = "Cancel input" }]
