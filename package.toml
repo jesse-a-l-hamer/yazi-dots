@@ -1,36 +1,36 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:types"
-rev = "56971d0"
-hash = "daf9e3d12688cf855fce665839efcd6d"
+rev = "de33976"
+hash = "6c4759ffad7b1caef81fafed85b4a132"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "56971d0"
+rev = "de33976"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "56971d0"
+rev = "de33976"
 hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "56971d0"
+rev = "de33976"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-paste"
-rev = "56971d0"
+rev = "de33976"
 hash = "75fd60b2df7115e0a6ca31a6a804d320"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "56971d0"
+rev = "de33976"
 hash = "8a7c58225816a163a6e8730c0adafbc8"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "56971d0"
+rev = "de33976"
 hash = "76ea4ff62db6ebe62e4653c2de95cbd"
 
 [[plugin.deps]]
@@ -40,12 +40,12 @@ hash = "98b8276aa076284f5c4a5260cbe08549"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "56971d0"
+rev = "de33976"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:diff"
-rev = "56971d0"
+rev = "de33976"
 hash = "492e4757f332e29f982556bf507e043c"
 
 [[plugin.deps]]
@@ -85,7 +85,7 @@ hash = "c9e628fc0312d198db22ae2fa74883b"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "56971d0"
+rev = "de33976"
 hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
 
 [[plugin.deps]]
@@ -120,10 +120,10 @@ hash = "c32a76c9caa9cfc6cc10c83bcbebf4d0"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "4a1802a"
-hash = "b069dba45e199684b16fa12d385642ed"
+rev = "ca61658"
+hash = "2f60298d6c26b6d388c8091a9389fa8f"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-latte"
-rev = "4a1802a"
-hash = "525675a9180ed23a097b07399627294a"
+rev = "ca61658"
+hash = "c6b710b2aa0fb9c6c7f1ec4db6146104"
