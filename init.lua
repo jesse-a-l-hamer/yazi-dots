@@ -16,7 +16,9 @@ require("copy-file-contents"):setup({
 	append_char = "\n",
 	notification = true,
 })
-require("sshfs"):setup()
+require("sshfs"):setup({
+	mount_dir = os.getenv("HOME") .. "/Mount",
+})
 
 Status:children_add(function(self)
 	local h = self._current.hovered
