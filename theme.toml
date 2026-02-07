@@ -65,9 +65,16 @@
 
 [filetype]
 
-
 [icon]
+  prepend_conds = [{ if = "hidden & dir", text = "󱞞", fg = "#b7bdf8" }]
 
+  append_dirs = [
+    { name = "Calendars", text = "󰃭", fg = "#8bd5ca" },
+    { name = "Contacts", text = "󰛋", fg = "#8bd5ca" },
+    { name = "Mail", text = "󰛮", fg = "#8bd5ca" },
+    { name = "Mount", text = "󱘖", fg = "#8bd5ca" },
+    { name = "Templates", text = "", fg = "#8bd5ca" },
+  ]
   append_files = [
     { name = "kritadisplayrc", text = "", fg = "#c6a0f6" },
     { name = ".gtkrc-2.0", text = "", fg = "#f4dbd6" },
