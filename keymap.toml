@@ -18,10 +18,7 @@
       "e",
     ], run = '''shell 'sudoedit "$@"' --block --confirm''', desc = "sudoedit" },
     # compose mail with attachment
-    { on = "<C-m>", run = '''shell --
-	paths=$(for p in "$@"; do echo "$p"; done | paste -s -d,)
-	betterbird -compose "attachment='$paths'"
-''' },
+    { on = "<C-m>", run = "shell --block -- neomutt -a %s" },
     ###############
     ### PLUGINS ###
     ###############
