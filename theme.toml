@@ -68,7 +68,7 @@
 
 [icon]
 
-  files = [
+  append_files = [
     { name = "kritadisplayrc", text = "", fg = "#c6a0f6" },
     { name = ".gtkrc-2.0", text = "", fg = "#f4dbd6" },
     { name = "bspwmrc", text = "", fg = "#1e2030" },
@@ -247,7 +247,7 @@
     { name = ".justfile", text = "", fg = "#8087a2" },
   ]
 
-  exts = [
+  append_exts = [
     { name = "otf", text = "", fg = "#f4dbd6" },
     { name = "import", text = "", fg = "#f4dbd6" },
     { name = "krz", text = "", fg = "#c6a0f6" },
