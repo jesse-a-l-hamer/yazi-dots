@@ -71,6 +71,7 @@
   append_dirs = [
     { name = "Calendars", text = "󰃭", fg = "#8bd5ca" },
     { name = "Contacts", text = "󰛋", fg = "#8bd5ca" },
+    { name = "Games", text = "󰺷", fg = "#8bd5ca" },
     { name = "Mail", text = "󰛮", fg = "#8bd5ca" },
     { name = "Mount", text = "󱘖", fg = "#8bd5ca" },
     { name = "Templates", text = "", fg = "#8bd5ca" },
