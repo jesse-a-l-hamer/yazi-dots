@@ -35,8 +35,8 @@ hash = "384464b6df8cb807425c521f8cd790f3"
 
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "26a75da"
-hash = "53011ad6844fb69e57c946af21ddd3de"
+rev = "a7febc0"
+hash = "5093ac06d5a80b5fe4f1d5f6db86fd30"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
@@ -65,8 +65,8 @@ hash = "778941e7f1ebbacd60f4e254bb3c51de"
 
 [[plugin.deps]]
 use = "boydaihungst/gvfs"
-rev = "9d64595"
-hash = "b6f691f01a2122bd94866800d4d12a22"
+rev = "a908b62"
+hash = "5b6bd533139461c620968c1d860b4dce"
 
 [[plugin.deps]]
 use = "Deepak22903/kdeconnect-send"
