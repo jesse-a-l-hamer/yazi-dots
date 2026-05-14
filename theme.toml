@@ -74,6 +74,7 @@
     { name = "Games", text = "󰺷", fg = "#8bd5ca" },
     { name = "Mail", text = "󰛮", fg = "#8bd5ca" },
     { name = "Mount", text = "󱘖", fg = "#8bd5ca" },
+    { name = "Projects", text = "", fg = "#8bd5ca" },
     { name = "Templates", text = "", fg = "#8bd5ca" },
   ]
   append_files = [
