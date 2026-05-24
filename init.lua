@@ -9,9 +9,9 @@ require("gvfs"):setup({
 	save_path = os.getenv("HOME") .. "/.config/yazi/gvfs.private",
 	password_vault = "keyring",
 })
-require("kdeconnect-send"):setup({
-	auto_select_single = false,
-})
+-- require("kdeconnect-send"):setup({
+-- 	auto_select_single = false,
+-- })
 require("copy-file-contents"):setup({
 	append_char = "\n",
 	notification = true,
