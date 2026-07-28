@@ -120,10 +120,10 @@ hash = "a9096eeeb9c69d6c325e979afb838a5f"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "4770a34"
+rev = "1a5f787"
 hash = "67f2240fd9c98f21714527a24cd672f8"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-latte"
-rev = "4770a34"
+rev = "1a5f787"
 hash = "b8f46853c27707115f25f3423a47bd38"
